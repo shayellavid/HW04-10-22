@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        a = parseInt(prompt('Enter number for a'))
+        b = parseInt(prompt('Enter number for b'))
+        p = 1;
+        while (b > 0) {
+            m = 0;
+            t = a;
+            while (t > 0) {
+                m = m + p;
+                t = t - 1;
+            }
+            p = m;
+            b = b - 1;
+        }
+        document.write(p);
+        document.write(' <br>')
+
+        document.write(' finished!')
+        //for 4 and 3 = 64
+        //for 3 and 4 = 81
+    </script>
+</body>
+
+</html>
